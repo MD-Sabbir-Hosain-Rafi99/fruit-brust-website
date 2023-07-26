@@ -36,9 +36,10 @@
 <body>
     <header class="md:container md:mx-auto font-lato">
         <nav>
+            <!--md and lg display-->
             <div class="navbar hidden md:flex bg-bg-primary-color my-12 rounded-full h-20 px-8">
                 <div>
-                    <ul class="menu menu-horizontal px-1 font-medium text-white">
+                    <ul class="menu menu-horizontal md:text-xs lg:px-1 font-medium text-white">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
@@ -46,16 +47,30 @@
                     </ul>
                 </div>
                 <div class="flex-1 justify-center">
-                    <img class="w-10" src="./images/logo.png" alt="">
-                  <a class="btn btn-ghost normal-case text-4xl text-white">Fruit Burst</a>
+                    <img class="md:w-6 lg:w-10" src="./images/logo.png" alt="">
+                  <a class="btn btn-ghost normal-case lg:text-4xl text-white">Fruit Burst</a>
                 </div>
                 <div class="flex-none gap-2">
                   <div class="form-control">
                     <input type="text" placeholder="Search here" class="input input-bordered border-none rounded-full w-24 md:w-auto lg:w-72 h-9" />
                   </div>
-                    <i class="fa-solid fa-magnifying-glass absolute ml-64"></i>
+                    <i class="fa-solid fa-magnifying-glass absolute md:ml-44 lg:ml-64"></i>
                 </div>
               </div>
+            <!--sm device-->
+                <div class="navbar flex mt-7 px-4 md:hidden bg-base-100">
+                    <div class="flex-1">
+                        <img class="w-10" src="./images/logo.png" alt="">
+                        <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+                    </div>
+                    <div class="flex-none">
+                      <button class="btn btn-square btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                      </button>
+                    </div>
+                    
+                  </div>
+            
         </nav>
     </header>
     <main>
