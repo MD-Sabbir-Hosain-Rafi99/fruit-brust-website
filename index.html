@@ -17,29 +17,34 @@
     <!--Tailwind Design-->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'bg-primary-color': '#F85559',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bg-primary-color': '#F85559',
+                        'btn-primary-color': '#F85559',
+                    }
+                }
             }
-          }
         }
-      </script>
-      <style>
-        .font-lato{
+    </script>
+    <style>
+        .font-lato {
             font-family: 'Lato', sans-serif;
         }
-      </style>
+        .bg-img-color{
+            background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
+        }
+    </style>
 </head>
+
 <body>
     <header class="md:container md:mx-auto font-lato">
         <nav>
             <!--md and lg display-->
             <div class="navbar hidden md:flex bg-bg-primary-color my-12 rounded-full h-20 px-8">
                 <div>
-                    <ul class="menu menu-horizontal md:text-xs lg:px-1 font-medium text-white">
+                    <ul class="menu menu-horizontal lg:px-1 font-medium text-white">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
@@ -48,33 +53,89 @@
                 </div>
                 <div class="flex-1 justify-center">
                     <img class="md:w-6 lg:w-10" src="./images/logo.png" alt="">
-                  <a class="btn btn-ghost normal-case lg:text-4xl text-white">Fruit Burst</a>
+                    <a class="btn btn-ghost normal-case lg:text-4xl text-white">Fruit Burst</a>
                 </div>
                 <div class="flex-none gap-2">
-                  <div class="form-control">
-                    <input type="text" placeholder="Search here" class="input input-bordered border-none rounded-full w-24 md:w-auto lg:w-72 h-9" />
-                  </div>
+                    <div class="form-control">
+                        <input type="text" placeholder="Search here"
+                            class="input input-bordered border-none rounded-full w-24 md:w-auto lg:w-72 h-9" />
+                    </div>
                     <i class="fa-solid fa-magnifying-glass absolute md:ml-44 lg:ml-64"></i>
                 </div>
-              </div>
+            </div>
             <!--sm device-->
-                <div class="navbar flex mt-7 px-4 md:hidden bg-base-100">
-                    <div class="flex-1">
-                        <img class="w-10" src="./images/logo.png" alt="">
-                        <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
-                    </div>
-                    <div class="flex-none">
-                      <button class="btn btn-square btn-ghost">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                      </button>
-                    </div>
-                    
-                  </div>
-            
+            <div class="navbar flex mt-7 px-4 md:hidden bg-base-100">
+                <div class="flex-1">
+                    <img class="w-10" src="./images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+                </div>
+                <div class="flex-none">
+                    <button class="btn btn-square btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            class="inline-block w-5 h-5 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
         </nav>
+        <section>
+            <!--Banner Section-->
+            <div class="carousel w-full opacity-80">
+                <div id="slide1" class="carousel-item relative w-full flex justify-center">
+                    <div class="text-center absolute text-white mt-20 space-y-6">
+                        <h3 class="text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h3>
+                        <p>We supply highly quality organic products</p>
+                        <button class="btn bg-btn-primary-color text-white border-none text-xs">Shop Now</button>
+                    </div>
+                    <img src="/images/banner1.png" class="w-full"/>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full flex justify-center">
+                    <div class="text-center absolute text-white mt-20 space-y-6">
+                        <h3 class="text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h3>
+                        <p>We supply highly quality organic products</p>
+                        <button class="btn bg-btn-primary-color text-white border-none text-xs">Shop Now</button>
+                    </div>
+                    <img src="/images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full flex justify-center">
+                    <div class="text-center absolute text-white mt-20 space-y-6">
+                        <h3 class="text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h3>
+                        <p>We supply highly quality organic products</p>
+                        <button class="btn bg-btn-primary-color text-white border-none text-xs">Shop Now</button>
+                    </div>
+                    <img src="/images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full flex justify-center">
+                    <div class="text-center absolute text-white mt-20 space-y-6">
+                        <h3 class="text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h3>
+                        <p>We supply highly quality organic products</p>
+                        <button class="btn bg-btn-primary-color text-white border-none text-xs">Shop Now</button>
+                    </div>
+                    <img src="/images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
     <main>
-
     </main>
     <footer>
 
