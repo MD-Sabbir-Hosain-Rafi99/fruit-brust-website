@@ -32,6 +32,10 @@
         .font-lato {
             font-family: 'Lato', sans-serif;
         }
+
+        .mini-text-color {
+            color: rgba(18, 18, 18, 0.60);
+        }
     </style>
 </head>
 
@@ -85,7 +89,8 @@
                     <div class="text-center absolute text-white mt-4 lg:mt-20 lg:space-y-6">
                         <h3 class="text-2xl lg:text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h3>
                         <p class="text-xs lg:text-base">We supply highly quality organic products</p>
-                        <button class="btn bg-btn-primary-color text-white border-none mt-3 btn-md lg:text-xs">Shop Now</button>
+                        <button class="btn bg-btn-primary-color text-white border-none mt-3 btn-md lg:text-xs">Shop
+                            Now</button>
                     </div>
                     <img src="/images/banner1.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -97,7 +102,8 @@
                     <div class="text-center absolute text-white mt-4 lg:mt-20 lg:space-y-6">
                         <h3 class="text-2xl lg:text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h3>
                         <p class="text-xs lg:text-base">We supply highly quality organic products</p>
-                        <button class="btn bg-btn-primary-color text-white border-none mt-3 lg:text-xs">Shop Now</button>
+                        <button class="btn bg-btn-primary-color text-white border-none mt-3 lg:text-xs">Shop
+                            Now</button>
                     </div>
                     <img src="/images/banner2.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -109,7 +115,8 @@
                     <div class="text-center absolute text-white mt-4 lg:mt-20 lg:space-y-6">
                         <h3 class="text-2xl lg:text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h3>
                         <p class="text-xs lg:text-base">We supply highly quality organic products</p>
-                        <button class="btn bg-btn-primary-color text-white border-none mt-3 lg:text-xs">Shop Now</button>
+                        <button class="btn bg-btn-primary-color text-white border-none mt-3 lg:text-xs">Shop
+                            Now</button>
                     </div>
                     <img src="/images/banner3.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -121,7 +128,8 @@
                     <div class="text-center absolute text-white mt-4 lg:mt-20 lg:space-y-6">
                         <h3 class="text-2xl lg:text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h3>
                         <p class="text-xs lg:text-base">We supply highly quality organic products</p>
-                        <button class="btn bg-btn-primary-color text-white border-none mt-3 lg:text-xs">Shop Now</button>
+                        <button class="btn bg-btn-primary-color text-white border-none mt-3 lg:text-xs">Shop
+                            Now</button>
                     </div>
                     <img src="/images/banner4.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -133,7 +141,8 @@
         </section>
         <section class="hidden md:flex justify-center">
             <!--Fruits Section-->
-            <div class="bg-white w-4/5 h-52 relative -mt-28 rounded-lg flex justify-center items-center space-x-16 mb-28 bg-base-100 shadow-xl">
+            <div
+                class="bg-white w-4/5 h-52 relative -mt-28 rounded-lg flex justify-center items-center space-x-16 mb-28 bg-base-100 shadow-xl">
                 <div class="text-center">
                     <img src="./images/fruit1.png" alt="">
                     <p>Strawberry</p>
@@ -157,7 +166,119 @@
             </div>
         </section>
     </header>
-    <main>
+    <main class="md:container md:mx-auto font-lato">
+        <!--Deal Of The Day Section-->
+        <section>
+            <div class="flex gap-x-96 justify-center items-center mb-12">
+                <!--Text-->
+                <div class="space-y-6">
+                    <h3 class="text-5xl font-extrabold">Deal of the day</h3>
+                    <p class="mini-text-color">Contrary to popular belief, is not simply random text. It has roots in a
+                        piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <!--Clock-->
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max justify-center items-center">
+                    <div class="flex flex-col">
+                        <span class="countdown font-lato text-5xl">
+                            <span style="--value:15;"></span>
+                        </span>
+                        days 
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                    <div class="flex flex-col">
+                        <span class="countdown font-lato text-5xl">
+                            <span style="--value:10;"></span>
+                        </span>
+                        hours
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                    <div class="flex flex-col">
+                        <span class="countdown font-lato text-5xl">
+                            <span style="--value:24;"></span>
+                        </span>
+                        min
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                    <div class="flex flex-col">
+                        <span class="countdown font-lato text-5xl">
+                            <span style="--value:15;"></span>
+                        </span>
+                        sec
+                    </div>
+                </div>
+            </div>
+            <!--Card of parent div-->
+            <div class="flex gap-x-6 justify-center items-center mb-12">
+                <!--Card One-->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images/fruit6.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2>12.90$ - 18.85$</h2>
+                        <hr>
+                        <p>Orange</p>
+                        <div class="rating flex justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                    </div>
+                </div>
+                <!--Card Two-->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images/fruit7.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2>12.90$ - 18.85$</h2>
+                        <hr>
+                        <p>Orange</p>
+                        <div class="rating flex justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                    </div>
+                </div>
+                <!--Card Three-->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images/fruit8.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2>12.90$ - 18.85$</h2>
+                        <hr>
+                        <p>Orange</p>
+                        <div class="rating flex justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                    </div>
+                </div>
+                <!--Card Four-->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images/fruit9.png" alt="" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-2xl">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p>Orange</p>
+                        <div class="rating flex justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <button class="btn bg-btn-primary-color text-white border-none mt-3 btn-md lg:text-xs">Shop
+                    All</button>
+            </div>
+        </section>
     </main>
     <footer>
 
